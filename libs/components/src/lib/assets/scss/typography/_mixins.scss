@@ -1,0 +1,75 @@
+@use '../abstract/variables';
+
+@mixin make-regular() {
+  font-weight: variables.$font-weight-regular;
+}
+
+@mixin make-bold() {
+  font-weight: variables.$font-weight-bold;
+}
+
+@mixin make-like-heading-4xl() {
+  font-size: variables.$heading-4xl-font-size;
+  line-height: variables.$heading-4xl-line-height;
+  @include make-bold;
+}
+
+@mixin make-like-heading-3xl() {
+  font-size: variables.$heading-3xl-font-size;
+  line-height: variables.$heading-3xl-line-height;
+  @include make-bold;
+}
+
+@mixin make-like-heading-2xl() {
+  font-size: variables.$heading-2xl-font-size;
+  line-height: variables.$heading-2xl-line-height;
+  @include make-bold;
+}
+
+@mixin make-like-heading-xl() {
+  font-size: variables.$heading-xl-font-size;
+  line-height: variables.$heading-xl-line-height;
+  @include make-bold;
+}
+
+@mixin make-like-heading-lg() {
+  font-size: variables.$heading-lg-font-size;
+  line-height: variables.$heading-lg-line-height;
+  @include make-bold;
+}
+
+@mixin make-like-heading-sm() {
+  font-size: variables.$heading-sm-font-size;
+  line-height: variables.$heading-sm-line-height;
+  @include make-bold;
+}
+
+@mixin make-like-text-xl() {
+  font-size: variables.$text-xl-font-size;
+  line-height: variables.$text-xl-line-height;
+  @include make-regular;
+}
+
+@mixin make-like-text-lg() {
+  font-size: variables.$text-lg-font-size;
+  line-height: variables.$text-lg-line-height;
+  @include make-regular;
+}
+
+@mixin make-like-text-base() {
+  font-size: variables.$text-base-font-size;
+  line-height: variables.$text-base-line-height;
+  @include make-regular;
+}
+
+@mixin make-like-text-sm() {
+  font-size: variables.$text-sm-font-size;
+  line-height: variables.$text-sm-line-height;
+  @include make-regular;
+}
+
+@mixin make-like-text-xs() {
+  font-size: variables.$text-xs-font-size;
+  line-height: variables.$text-xs-line-height;
+  @include make-regular;
+}

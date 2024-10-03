@@ -1,0 +1,15 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as UseFocusTrapStories from './useFocusTrap.stories';
+
+<Meta of={UseFocusTrapStories} />
+
+## useFocusTrap
+
+A react hook to create a focus trap.
+
+- Set `activateOnInit` to `true` to activate trap when react rendered the component.
+- Use `activateTrap` and/or `deActivateTrap` to activate or deactivate the focus trap manually
+- Use `deactivateOnEscape` to allow a user to exit the trap on key press `ESC`. You most likely wan't to use this in models and mobile menu's.
+
+<Canvas of={UseFocusTrapStories.Hook} />

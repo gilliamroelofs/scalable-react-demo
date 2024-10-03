@@ -1,0 +1,22 @@
+@use '../../../assets/scss/layout/mixins' as layoutMixins;
+@use '../../../assets/scss/abstract/variables' as variables;
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 variables.$spacer-24;
+
+  @include layoutMixins.media-breakpoint-up(md) {
+    padding: 0 variables.$spacer-32;
+  }
+
+  @include layoutMixins.media-breakpoint-up(lg) {
+    padding: 0 variables.$spacer-40;
+  }
+
+  @include layoutMixins.media-breakpoint-up(xl) {
+    max-width: variables.$viewport-xl;
+    padding: 0;
+  }
+}

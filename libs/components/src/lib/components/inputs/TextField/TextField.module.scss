@@ -1,0 +1,15 @@
+@use '../../../assets/scss/abstract/variables';
+
+.control {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.label {
+  
+}
+
+.input {
+  padding: variables.$spacer-8;
+}

@@ -1,0 +1,26 @@
+@use '../../../assets/scss/abstract/variables';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: variables.$color-white;
+}
+
+.header {
+  background-color: variables.$color-primary;
+  color: variables.$color-white;
+  padding: variables.$spacer-16 0;
+  text-align: center;
+}
+
+.main {
+  flex: 1;
+  padding: variables.$spacer-16 0;
+}
+
+.footer {
+  background-color: variables.$color-grey-light;
+  text-align: center;
+  padding: variables.$spacer-16 0;
+}

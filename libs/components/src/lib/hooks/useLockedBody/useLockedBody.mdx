@@ -1,0 +1,35 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as UseLockedBodyStories from './useLockedBody.stories';
+
+<Meta of={UseLockedBodyStories} />
+
+## useLockedBody
+
+- [How it works](#how-it-works)
+- [Examples](#examples)
+
+### How it works
+
+A react hook to block the scrolling of the page.
+
+An example of a use case is when you need to open a modal.
+
+````jsx
+export default function Component() {
+  const [locked, setLocked] = useLockedBody(false)
+
+  const toggleLocked = () => {
+    setLocked(!locked)
+  }
+
+  return <Button onClick={toggleLocked}>{locked ? 'unlock scroll' : 'lock scroll'}</Button>
+}
+````
+
+### Examples
+
+<Canvas of={UseLockedBodyStories.Hook} />
+
+#### Source
+[Documentation of usehooks-ts](https://usehooks-ts.com/react-hook/use-locked-body)

@@ -1,0 +1,30 @@
+@use './mixins';
+
+body, * {
+  font-family: 'Roboto', sans-serif;
+  @include mixins.make-like-text-base;
+}
+
+h1 {
+  @include mixins.make-like-heading-4xl;
+}
+
+h2 {
+  @include mixins.make-like-heading-3xl;
+}
+
+h3 {
+  @include mixins.make-like-heading-2xl;
+}
+
+h4 {
+  @include mixins.make-like-heading-xl;
+}
+
+h5 {
+  @include mixins.make-like-heading-lg;
+}
+
+h6 {
+  @include mixins.make-like-heading-sm;
+}

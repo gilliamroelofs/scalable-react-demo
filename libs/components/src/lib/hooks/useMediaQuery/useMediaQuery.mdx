@@ -1,0 +1,22 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as UseMediaQueryStories from './useMediaQuery.stories';
+
+<Meta of={UseMediaQueryStories} />
+
+## useMediaQuery
+
+- [How it works](#how-it-works)
+- [Examples](#examples)
+
+### How it works
+
+A react hook to Easily retrieve media dimensions with this Hook React which also works onResize.
+
+````jsx
+const matches = useMediaQuery()
+````
+
+### Examples
+
+<Canvas of={UseMediaQueryStories.Hook} />

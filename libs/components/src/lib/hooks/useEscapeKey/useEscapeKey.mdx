@@ -1,0 +1,22 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as UseEscapeKeyStories from './useEscapeKey.stories';
+
+<Meta of={UseEscapeKeyStories} />
+
+## useEscapeKey
+
+- [How it works](#how-it-works)
+- [Examples](#examples)
+
+### How it works
+
+A react hook to check whether the user has pressed the escape key. It takes a handler function and a boolean to determine whether the hook should be active or not.
+
+````jsx
+useEscapeKey(handler, isActiveBoolean)
+````
+
+### Examples
+
+<Canvas of={UseEscapeKeyStories.Hook} />

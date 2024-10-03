@@ -1,0 +1,16 @@
+@use '../../../../assets/scss/abstract/variables';
+
+.root {
+  > div {
+    background-color: variables.$color-primary-light;
+
+    > div {
+      display: grid;
+      place-content: center;
+      border-radius: variables.$border-radius-s;
+      background-color: variables.$color-primary;
+      text-align: center;
+      padding: variables.$spacer-16;
+    }
+  }
+}

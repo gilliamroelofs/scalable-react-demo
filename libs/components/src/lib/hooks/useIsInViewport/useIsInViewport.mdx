@@ -1,0 +1,27 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as UseIsInViewportStories from './useIsInViewport.stories';
+
+<Meta of={UseIsInViewportStories} />
+
+## useIsInViewport
+
+- [How it works](#how-it-works)
+- [Examples](#examples)
+
+### How it works
+
+A react hook to use the IntersectionObserver declaratively in your React app for the purposes of finding out if an element is in the viewport.
+
+````jsx
+const [isInViewport, ref] = useIsInViewport()
+````
+
+To check if an element is in the viewport:
+
+1. Set the `ref` prop on the element.
+2. Use the `isInViewport` boolean to base your logic on.
+
+### Examples
+
+<Canvas of={UseIsInViewportStories.Hook} />

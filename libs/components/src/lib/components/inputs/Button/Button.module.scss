@@ -1,0 +1,68 @@
+@use '../../../assets/scss/abstract/variables';
+
+.button {
+  // reset
+  font-family: inherit;
+
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  position: relative;
+  padding: 0;
+
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > .text {
+      min-width: 5rem;
+    }
+  }
+
+  &.small {
+    .text {
+      padding: variables.$spacer-4;
+    }
+  }
+
+  &.medium {
+    .text {
+      padding: variables.$spacer-8;
+    }
+  }
+
+  &.large {
+    .text {
+      padding: variables.$spacer-12;
+    }
+  }
+
+
+  &.primary {
+    background-color: variables.$color-primary-dark;
+    color: variables.$color-primary-light;
+
+    &:not(:disabled, .disabled) {
+      &:hover,
+      &:focus {
+        background-color: variables.$color-primary;
+      }
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    box-shadow: none;
+    border: none;
+    background-color: variables.$color-grey-light;
+    color: variables.$color-grey;
+    cursor: not-allowed;
+
+    // disable link
+    pointer-events: none;
+  }
+
+}

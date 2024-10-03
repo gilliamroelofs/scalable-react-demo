@@ -1,0 +1,137 @@
+@use '../../../../assets/scss/abstract/variables';
+@use '../../../../assets/scss/layout/mixins' as layoutMixins;
+
+@mixin grid-utilities($bp: '') {
+  .#{$bp}grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .#{$bp}grid-cols-none {
+    grid-template-columns: none;
+  }
+  .#{$bp}grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+  .#{$bp}grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  .#{$bp}grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+  .#{$bp}grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+  .#{$bp}grid-rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+  .#{$bp}grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+  .#{$bp}grid-flow-row {
+    grid-auto-flow: row;
+  }
+  .#{$bp}grid-flow-column {
+    grid-auto-flow: column;
+  }
+  .#{$bp}grid-flow-dense {
+    grid-auto-flow: dense;
+  }
+  .#{$bp}grid-flow-row-dense {
+    grid-auto-flow: row dense;
+  }
+  .#{$bp}grid-flow-column-dense {
+    grid-auto-flow: column dense;
+  }
+  .#{$bp}auto-cols-auto {
+    grid-auto-columns: auto;
+  }
+  .#{$bp}auto-cols-min {
+    grid-auto-columns: min-content;
+  }
+  .#{$bp}auto-cols-max {
+    grid-auto-columns: max-content;
+  }
+  .#{$bp}auto-cols-fr {
+    grid-auto-columns: minmax(0, 1fr);
+  }
+  .#{$bp}auto-rows-auto {
+    grid-auto-rows: auto;
+  }
+  .#{$bp}auto-rows-min {
+    grid-auto-rows: min-content;
+  }
+  .#{$bp}auto-rows-max {
+    grid-auto-rows: max-content;
+  }
+  .#{$bp}auto-rows-fr {
+    grid-auto-rows: minmax(0, 1fr);
+  }
+
+  @each $n, $value in variables.$spacer-map {
+    .#{$bp}gap-#{$n} {
+      gap: $value;
+    }
+
+    .#{$bp}gap-x-#{$n} {
+      column-gap: $value;
+    }
+
+    .#{$bp}gap-y-#{$n} {
+      row-gap: $value;
+    }
+  }
+}
+
+@include grid-utilities;
+
+@include layoutMixins.media-breakpoint-up(xs) {
+  @include grid-utilities('xs-');
+}
+
+@include layoutMixins.media-breakpoint-up(md) {
+  @include grid-utilities('md-');
+}
+
+@include layoutMixins.media-breakpoint-up(lg) {
+  @include grid-utilities('lg-');
+}
+
+@include layoutMixins.media-breakpoint-up(xl) {
+  @include grid-utilities('xl-');
+}
+
+.grid {
+  display: grid;
+}

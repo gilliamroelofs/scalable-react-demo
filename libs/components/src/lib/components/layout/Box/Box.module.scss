@@ -1,0 +1,10 @@
+@use '../../../assets/scss/abstract/variables';
+
+@each $n, $value in variables.$spacer-map {
+  .p-#{$n} {
+    padding: $value;
+  }
+  .m-#{$n} {
+    margin: $value;
+  }
+}

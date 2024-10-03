@@ -1,0 +1,118 @@
+// Viewport settings
+$viewport-xl: 1120px;
+$breakpoint-xs: 0;
+$breakpoint-md: 744px;
+$breakpoint-lg: 980px;
+$breakpoint-xl: 1280px;
+$grid-breakpoints: (
+  xs: $breakpoint-xs,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl
+);
+
+// Spacing
+$spacer-4: .25rem;
+$spacer-8: .5rem;
+$spacer-12: .75rem;
+$spacer-16: 1rem;
+$spacer-20: 1.25rem;
+$spacer-24: 1.5rem;
+$spacer-28: 1.75rem;
+$spacer-32: 2rem;
+$spacer-40: 2.5rem;
+$spacer-48: 3rem;
+$spacer-56: 3.5rem;
+$spacer-64: 4rem;
+$spacer-80: 5rem;
+$spacer-96: 6rem;
+$spacer-128: 8rem;
+
+$spacer-map: (
+  0: 0,
+  4: $spacer-4,
+  8: $spacer-8,
+  12: $spacer-12,
+  16: $spacer-16,
+  20: $spacer-20,
+  24: $spacer-24,
+  28: $spacer-28,
+  32: $spacer-32,
+  40: $spacer-40,
+  48: $spacer-48,
+  56: $spacer-56,
+  64: $spacer-64,
+  80: $spacer-80,
+  96: $spacer-96,
+  128: $spacer-128,
+);
+
+
+// Border radius
+$border-radius-s: .25rem;
+$border-radius-m: .5rem;
+$border-radius-l: .75rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 1.25rem;
+$border-radius-round: 999px;
+
+// font
+$heading-4xl-font-size: 2.625rem;
+$heading-4xl-line-height: 3.25rem;
+
+$heading-3xl-font-size: 2.25rem;
+$heading-3xl-line-height: 2.75rem;
+
+$heading-2xl-font-size: 2rem;
+$heading-2xl-line-height: 2.5rem;
+
+$heading-xl-font-size: 1.75rem;
+$heading-xl-line-height: 2rem;
+
+$heading-lg-font-size: 1.5rem;
+$heading-lg-line-height: 1.75rem;
+
+$heading-sm-font-size: 1.25rem;
+$heading-sm-line-height: 1.75rem;
+
+$text-xl-font-size: 1.25rem;
+$text-xl-line-height: 150%;
+
+$text-lg-font-size: 1.125rem;
+$text-lg-line-height: 150%;
+
+$text-base-font-size: 1rem;
+$text-base-line-height: 150%;
+
+$text-sm-font-size: .875rem;
+$text-sm-line-height: 150%;
+
+$text-xs-font-size: .75rem;
+$text-xs-line-height: 150%;
+
+$font-weight-regular: 300;
+$font-weight-bold: 800;
+
+// colors
+$color-viridian-100: #DFF9E2;
+$color-viridian-200: #C1F3CB;
+$color-viridian-300: #98DDAD;
+$color-viridian-400: #72BC90;
+$color-viridian-500: #45906B;
+$color-viridian-600: #327B5E;
+$color-viridian-700: #226753;
+$color-viridian-800: #165347;
+$color-viridian-900: #0D453F;
+
+$color-primary-light: $color-viridian-300;
+$color-primary: $color-viridian-500;
+$color-primary-dark: $color-viridian-700;
+
+$color-white: #ffffff;
+$color-grey-light: #d1d5db;
+$color-grey: #6b7280;
+$color-grey-dark: #374151;
+
+$color-semantic-error-light: #fca5a5;
+$color-semantic-error: #ef4444;
+$color-semantic-error-dark: #b91c1c;

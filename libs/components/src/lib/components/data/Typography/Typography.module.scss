@@ -1,0 +1,70 @@
+@use '../../../assets/scss/typography/mixins';
+@use '../../../assets/scss/abstract/variables';
+
+.root {
+  // reset css
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.variant {
+  &-heading-4xl {
+    @include mixins.make-like-heading-4xl;
+  }
+  
+  &-heading-3xl {
+    @include mixins.make-like-heading-3xl;
+  }
+
+  &-heading-2xl {
+    @include mixins.make-like-heading-2xl;
+  }
+
+  &-heading-xl {
+    @include mixins.make-like-heading-xl;
+  }
+
+  &-heading-lg {
+    @include mixins.make-like-heading-lg;
+  }
+
+  &-heading-sm {
+    @include mixins.make-like-heading-sm;
+  }
+
+  &-text-xl {
+    @include mixins.make-like-text-xl;
+  }
+
+  &-text-lg {
+    @include mixins.make-like-text-lg;
+  }
+
+  &-text-base {
+    @include mixins.make-like-text-base;
+  }
+
+  &-text-sm {
+    @include mixins.make-like-text-sm;
+  }
+
+  &-text-xs {
+    @include mixins.make-like-text-xs;
+  }
+}
+
+.bold {
+  @include mixins.make-bold;
+}
+
+.color-primary {
+  color: variables.$color-primary;
+}
+
+.color-error {
+  color: variables.$color-semantic-error;
+}

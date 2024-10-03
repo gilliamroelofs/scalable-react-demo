@@ -1,0 +1,22 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/blocks';
+
+import * as UseOutsideClickStories from './useOutsideClick.stories';
+
+<Meta of={UseOutsideClickStories} />
+
+## useOutsideClick
+
+- [How it works](#how-it-works)
+- [Examples](#examples)
+
+### How it works
+
+A react hook to check whether the user has clicked outside a certain element. The element can be defined by setting a ref with the `useRef` hook and passing this in as the second argument. The first argument is a handler that can be defined whenever an outside click is detected.
+
+````jsx
+useOutsideClick(handler, ref, isActiveBoolean)
+````
+
+### Examples
+
+<Canvas of={UseOutsideClickStories.Hook} />
